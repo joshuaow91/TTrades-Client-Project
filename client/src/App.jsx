@@ -9,8 +9,8 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className="flex justify-center bg-fixed bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800 via-indigo-700 to-violet-900">
-      <div className=' bg-opacity-25 rounded-xl m-4 bg-slate-100 drop-shadow-xl'>
+    <div className="flex justify-center bg-fixed bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800 via-zinc-700 to-zinc-800">
+      <div className='  rounded-xl m-4 bg-gray-500 bg-opacity-30 drop-shadow-xl'>
           <Header />
           <Affiliates />
           <Playlist />

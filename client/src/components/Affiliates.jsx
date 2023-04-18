@@ -23,19 +23,20 @@ const Affiliates = () => {
         </div>
       </div>
 
-      <div className='flex w-full justify-evenly mb-4'>
-        <div className="flex flex-col justify-center items-center px-4 sm:p-2 bg-slate-300 rounded-md w-1/3 sm:w-1/4">
+      <div className='flex w-full mb-4 bg-zinc-600 p-2 rounded-md items-center'>
+
+        <div className="flex flex-col  items-center px-4  w-1/3 sm:w-2/4">
           <FontAwesomeIcon
             icon={faUser}
-            className="w-10 h-10 dark:bg-slate-600 rounded-full p-5 mb-2 text-zinc-300"
+            className="w-10 h-10 bg-zinc-700 rounded-full p-5 mb-2 text-zinc-300"
           />
-          <h3 className="text-xl font-bold text-slate-500">Affiliate</h3>
+          <h3 className="text-md  text-zinc-300">Elite Trader Funding</h3>
         </div>
-        <div className='w-2/3 sm:w-3/4 ml-4 sm:ml-6'>
-          <p className=" text-slate-300 text-sm sm:text-base">
+
+        <div className='w-2/3 sm:w-full  text-zinc-400 text-sm sm:text-base'>
             A premier provider of advanced trading tools and analytics, Affiliate empowers traders to make informed decisions and optimize their strategies in the ever-changing market landscape.
-          </p>
         </div>
+
       </div>
       
     
