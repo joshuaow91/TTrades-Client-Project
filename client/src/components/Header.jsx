@@ -23,23 +23,23 @@ const Header = () => {
                 </p>
                 <ul className="flex gap-x-4">
                     <li>
-                        <a href="#" className="text-gray-500 hover:text-white">
+                        <a href="https://www.youtube.com/@TTrades_edu" target='_blank' className="text-gray-500 hover:text-white">
                         <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="text-gray-500 hover:text-white">
-                        <FontAwesomeIcon icon={faTwitter} className="w-6 h-6" />
+                        <a href="https://twitter.com/TTrades_edu" className="text-gray-500 hover:text-white">
+                        <FontAwesomeIcon icon={faTwitter} target='_blank' className="w-6 h-6" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ttradesedu/" className="text-gray-500 hover:text-white">
+                        <FontAwesomeIcon icon={faTiktok} target='_blank' className="w-6 h-6" />
                         </a>
                     </li>
                     <li>
                         <a href="#" className="text-gray-500 hover:text-white">
-                        <FontAwesomeIcon icon={faTiktok} className="w-6 h-6" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" className="text-gray-500 hover:text-white">
-                        <FontAwesomeIcon icon={faInstagram} className="w-6 h-6" />
+                        <FontAwesomeIcon icon={faInstagram} target='_blank' className="w-6 h-6" />
                         </a>
                     </li>
                 </ul>
