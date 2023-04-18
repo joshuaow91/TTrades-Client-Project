@@ -13,7 +13,7 @@ const Affiliates = () => {
             icon={faUser}
             className="w-10 h-10 dark:bg-slate-600 rounded-full p-5 mb-2 text-zinc-300"
           />
-          <h3 className="text-xl font-bold text-slate-500">Affiliate</h3>
+          <h3 className="text-xl font-bold text-slate-500">Stat Trading</h3>
         </div>
 
         <div className='w-2/3 sm:w-3/4 ml-4 sm:ml-6'>
@@ -30,7 +30,7 @@ const Affiliates = () => {
             icon={faUser}
             className="w-10 h-10 bg-zinc-700 rounded-full p-5 mb-2 text-zinc-300"
           />
-          <h3 className="text-md  text-zinc-300">Elite Trader Funding</h3>
+          <h3 className="text-md  text-zinc-300 font-semibold">Elite Trader Funding</h3>
         </div>
 
         <div className='w-2/3 sm:w-full  text-zinc-400 text-sm sm:text-base'>
