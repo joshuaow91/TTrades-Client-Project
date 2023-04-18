@@ -35,7 +35,7 @@ const RecentVideos = () => {
         {videoIds.map((videoId, index) => (
           <div key={index} className="relative w-full overflow-hidden rounded-md" style={{ paddingTop: '56.25%' }}>
             <div className="absolute top-0 left-0 w-full h-full">
-              <YouTube videoId={videoId} opts={opts} className='w-full h-full brightness-75 hover:brightness-100' />
+              <YouTube videoId={videoId} opts={opts} className='w-full h-full brightness-75 hover:brightness-100 transform hover:scale-105 duration-300' />
             </div>
           </div>
         ))}
