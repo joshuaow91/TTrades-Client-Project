@@ -7,7 +7,8 @@ import { faTwitter, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-b
 const Header = () => {
 
     return (
-        <div className="m-2 p-2 flex flex-col sm:flex-row justify-evenly  items-center rounded-md bg-zinc-800 border-gray-700 max-w-3xl">
+        <div className="bg-zinc-600 max-w-3xl flex rounded-lg m-2 mb-4">
+        <div className="m-2 p-2 flex flex-col sm:flex-row justify-evenly items-center rounded-md bg-zinc-800 border-gray-700 ">
             <div className="w-1/2 sm:w-1/3">
                 <a href="#">
                 <img className="w-full my-2 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full" src={Logo} alt="TTrades Logo"/>
@@ -45,6 +46,7 @@ const Header = () => {
                 </ul>
             </div>
         </div> 
+        </div>
     )
 }
 

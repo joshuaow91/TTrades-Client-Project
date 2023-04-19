@@ -15,13 +15,15 @@ const Playlist = () => {
   };
 
   return (
-    <div className='mx-4'>
-      <h2 className='text-center text-4xl font-bold tracking-tight text-zinc-200 mb-4'>Featured Playlist</h2>
+    <div className='bg-zinc-600 m-2 rounded-lg'>
+    <div className='m-2'>
+       <h2 className='text-4xl font-bold tracking-wide text-zinc-300 uppercase text-center bg-zinc-800 rounded-md rounded-b-none p-2 my-2'>Featured Playlist</h2>
         <div className="relative w-full overflow-hidden mb-8 rounded-md" style={{ paddingTop: '56.25%' }}>
             <div className="absolute top-0 left-0 w-full h-full">
                 <YouTube className="w-full h-full rounded-md" opts={opts} />
             </div>
         </div>
+    </div>
     </div>
   );
 };
