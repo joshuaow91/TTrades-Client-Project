@@ -8,6 +8,9 @@ import Footer from './components/Footer'
 
 function App() {
 
+  console.log('API Key:', import.meta.env.VITE_YOUTUBE_API_KEY);
+
+
   return (
     <div className="flex justify-center bg-fixed bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800 via-zinc-900 to-zinc-800">
       <div className='sm:m-1 '>
