@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 
-const YOUTUBE_API_KEY = 'AIzaSyABa_gQOqNXSxjg5PFfd4mBaovrstRiWTs';
+const YOUTUBE_API_KEY = 'AIzaSyC4qTq00nvxAGRJXA4UWIHxLbb1nRtsO0c';
 const CHANNEL_ID = 'UCQwUEVakiYDmNGe7UBza4sQ';
 
 const RecentVideos = () => {
   const [videoIds, setVideoIds] = useState([]);
+  const [displayCount, setDisplayCount] = useState(4);
 
   useEffect(() => {
     const fetchRecentVideos = async () => {
@@ -20,6 +21,10 @@ const RecentVideos = () => {
     fetchRecentVideos();
   }, []);
 
+  const handleViewMore = () => {
+    setDisplayCount(displayCount + 3);
+  };
+
   const opts = {
     width: '100%',
     height: '100%',
@@ -32,7 +37,7 @@ const RecentVideos = () => {
     <div className='m-2'>
       <h2 className='text-4xl font-bold tracking-wide text-white text-opacity-80 uppercase text-center bg-zinc-800 rounded-md mb-2 p-2'>Recent Videos</h2>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
-        {videoIds.map((videoId, index) => (
+        {videoIds.slice(0, displayCount).map((videoId, index) => (
           <div key={index} className="relative w-full overflow-hidden rounded-md" style={{ paddingTop: '56.25%' }}>
             <div className="absolute top-0 left-0 w-full h-full">
               <YouTube videoId={videoId} opts={opts} className='w-full h-full brightness-75 hover:brightness-100 transform hover:scale-105 duration-300' />
@@ -40,6 +45,14 @@ const RecentVideos = () => {
           </div>
         ))}
       </div>
+      {displayCount < videoIds.length && (
+        <button
+          className="mt-4 mx-auto block text-center text-white text-sm hover:bg-rose-800 bg-rose-900 bg-opacity-80 px-5 py-2 rounded transform duration-300 hover:scale-110"
+          onClick={handleViewMore}
+        >
+          View More
+        </button>
+      )}
     </div>
   );
 };
