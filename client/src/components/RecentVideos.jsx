@@ -11,7 +11,7 @@ const RecentVideos = () => {
   useEffect(() => {
     const fetchRecentVideos = async () => {
       const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=6&order=date&type=video&key=${YOUTUBE_API_KEY}`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=12&order=date&type=video&key=${YOUTUBE_API_KEY}`
       );
       const data = await response.json();
       const ids = data.items.map(item => item.id.videoId);
@@ -47,7 +47,7 @@ const RecentVideos = () => {
       </div>
       {displayCount < videoIds.length && (
         <button
-          className="mt-4 mx-auto block text-center text-white text-sm hover:bg-rose-800 bg-rose-900 bg-opacity-80 px-5 py-2 rounded transform duration-300 hover:scale-110"
+          className="mt-4 mx-auto w-full sm:w-1/2 block text-center text-white text-sm hover:bg-rose-800 bg-rose-900 bg-opacity-80 px-5 py-2 rounded-md"
           onClick={handleViewMore}
         >
           View More
