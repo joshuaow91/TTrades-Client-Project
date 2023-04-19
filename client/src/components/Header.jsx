@@ -7,7 +7,7 @@ import { faTwitter, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-b
 const Header = () => {
 
     return (
-        <div className="max-w-5xl flex rounded-lg m-2">
+        <div className="max-w-5xl flex rounded-md m-2">
         <div className="p-2 flex flex-col sm:flex-row justify-evenly items-center rounded-md bg-gradient-to-b from-zinc-800 to zinc-700 border-gray-700 ">
             <div className="w-1/2 sm:w-1/3">
                 <a href="/">
@@ -16,7 +16,7 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col gap-y-4 sm:w-1/2 my-4 items-center">
-                <h1 className="text-6xl font-bold tracking-tight text-white">
+                <h1 className="text-7xl sm:text-8xl font-bold tracking-tight text-white text-opacity-95">
                     TTrades
                 </h1>
                 <p className="font-light text-white text-opacity-80 text-center">
