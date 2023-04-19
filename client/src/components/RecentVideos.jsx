@@ -29,9 +29,9 @@ const RecentVideos = () => {
   };
 
   return (
-    <>
-      <h2 className='text-center text-4xl font-bold tracking-tight text-zinc-200 mb-4'>Recent Videos</h2>
-      <div className="m-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className='m-2'>
+      <h2 className='text-4xl font-bold tracking-wide text-white text-opacity-80 uppercase text-center bg-zinc-800 rounded-md mb-2 p-2'>Recent Videos</h2>
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
         {videoIds.map((videoId, index) => (
           <div key={index} className="relative w-full overflow-hidden rounded-md" style={{ paddingTop: '56.25%' }}>
             <div className="absolute top-0 left-0 w-full h-full">
@@ -40,7 +40,7 @@ const RecentVideos = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

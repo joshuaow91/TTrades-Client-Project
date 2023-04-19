@@ -40,15 +40,15 @@ const affiliatesData = [
 ];
 
 const AffiliateCard = ({ name, description, code, link, img }) => (
-  <div className='grid grid-cols-3 bg-zinc-700 p-4 rounded-md items-start gap-y-1 gap-x-6'>
+  <div className='grid grid-cols-3 bg-zinc-800 p-4 rounded-md items-start gap-y-1 gap-x-6'>
     <div className="flex flex-col items-center col-span-1">
-      <img src={img} alt='affiliate logo' className='rounded-full brightness-75 '/>
+      <img src={img} alt='affiliate logo' className='rounded-full brightness-75 hover:brightness-100 transform duration-300 hover:scale-110'/>
     </div>
-    <div className='col-span-2 text-zinc-400 text-sm sm:text-base flex-col flex gap-y-2'>
-      <h3 className="text-xl text-zinc-300 font-semibold">{name}</h3>
+    <div className='col-span-2 text-white text-opacity-60 text-sm sm:text-base flex-col flex gap-y-2'>
+      <h3 className="text-xl text-white text-opacity-90 font-semibold">{name}</h3>
       <span className='inline-flex'>{description}</span>
       <div className="mt-2 flex justify-start gap-x-8 items-center">
-        <a href={link} target='_blank' className='text-white text-sm hover:bg-rose-800 bg-rose-800 bg-opacity-80 px-5 py-2 rounded'>
+        <a href={link} target='_blank' className='text-white text-sm hover:bg-rose-800 bg-rose-900 bg-opacity-80 px-5 py-2 rounded transform duration-300 hover:scale-110'>
           Visit Page
           <FontAwesomeIcon icon={faArrowRightLong} className='ml-2'/>
         </a>
@@ -66,7 +66,7 @@ const AffiliateCard = ({ name, description, code, link, img }) => (
 const Affiliates = () => {
   return (
     <div className="mb-6 max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-2 rounded-md mx-2">
-      <h2 className='text-4xl font-bold tracking-wide text-white text-opacity-80 uppercase col-span-full text-center bg-zinc-800 rounded-md p-2'>Affiliates</h2>
+      <h2 className='text-4xl font-bold tracking-wide text-white text-opacity-80 uppercase col-span-full text-center bg-zinc-800 bg-opacity-50 rounded-md p-2'>Affiliates</h2>
 
       {affiliatesData.map((affiliate) => (
         <AffiliateCard

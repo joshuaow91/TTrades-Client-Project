@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
 
     return (
-        <div className="flex flex-col sm:flex-row justify-between items-center m-2 text-slate-300 text-sm font-light gap-y-1 bg-slate-700 rounded-md rounded-t-none p-2 sm:bg-transparent">
+        <div className="flex flex-col sm:flex-row justify-between items-center m-2 text-white text-sm font-light gap-y-1 bg-zinc-800 rounded-md rounded-t-none p-2 sm:bg-transparent">
             <p className="text-center text-xs">
                 &copy; TTrades 2023. Not Financial Advice. 
             </p>

@@ -8,9 +8,9 @@ const Header = () => {
 
     return (
         <div className="max-w-5xl flex rounded-lg m-2">
-        <div className="p-2 flex flex-col sm:flex-row justify-evenly items-center rounded-md bg-zinc-800 border-gray-700 ">
+        <div className="p-2 flex flex-col sm:flex-row justify-evenly items-center rounded-md bg-gradient-to-b from-zinc-800 to zinc-700 border-gray-700 ">
             <div className="w-1/2 sm:w-1/3">
-                <a href="#">
+                <a href="/">
                 <img className="w-full my-2 bg-gradient-to-br from-zinc-600 to-zinc-700 rounded-full" src={Logo} alt="TTrades Logo"/>
                 </a>
             </div>
@@ -24,23 +24,23 @@ const Header = () => {
                 </p>
                 <ul className="flex gap-x-4">
                     <li>
-                        <a href="https://www.youtube.com/@TTrades_edu" target='_blank' className="text-rose-800 opacity-70 hover:text-rose-700">
-                        <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
+                        <a href="https://www.youtube.com/@TTrades_edu" target='_blank' className="text-rose-800 opacity-70 hover:text-rose-700 ">
+                        <FontAwesomeIcon icon={faYoutube} className="w-6 h-6 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/TTrades_edu" className="text-rose-800 opacity-70 hover:text-rose-700">
-                        <FontAwesomeIcon icon={faTwitter} target='_blank' className="w-6 h-6" />
+                        <FontAwesomeIcon icon={faTwitter} target='_blank' className="w-6 h-6 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/ttradesedu/" className="text-rose-800 opacity-70 hover:text-rose-700">
-                        <FontAwesomeIcon icon={faTiktok} target='_blank' className="w-6 h-6" />
+                        <FontAwesomeIcon icon={faTiktok} target='_blank' className="w-6 h-6 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                     <li>
                         <a href="#" className="text-rose-800 opacity-70 hover:text-rose-700">
-                        <FontAwesomeIcon icon={faInstagram} target='_blank' className="w-6 h-6" />
+                        <FontAwesomeIcon icon={faInstagram} target='_blank' className="w-6 h-6 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                 </ul>
