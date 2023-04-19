@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        'maroon': 'rgb(84, 2, 8)',
+      },
+      textColor: {
+        'maroon': 'rgb(84, 2, 8)',
+      },
+      borderColor: {
+        'maroon': 'rgb(84, 2, 8)',
+      },
+    },
   },
   plugins: [],
 }

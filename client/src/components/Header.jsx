@@ -7,11 +7,11 @@ import { faTwitter, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-b
 const Header = () => {
 
     return (
-        <div className="bg-zinc-600 max-w-3xl flex rounded-lg m-2 mb-4">
-        <div className="m-2 p-2 flex flex-col sm:flex-row justify-evenly items-center rounded-md bg-zinc-800 border-gray-700 ">
+        <div className="max-w-5xl flex rounded-lg m-2">
+        <div className="p-2 flex flex-col sm:flex-row justify-evenly items-center rounded-md bg-zinc-800 border-gray-700 ">
             <div className="w-1/2 sm:w-1/3">
                 <a href="#">
-                <img className="w-full my-2 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full" src={Logo} alt="TTrades Logo"/>
+                <img className="w-full my-2 bg-gradient-to-br from-zinc-600 to-zinc-700 rounded-full" src={Logo} alt="TTrades Logo"/>
                 </a>
             </div>
 
@@ -19,27 +19,27 @@ const Header = () => {
                 <h1 className="text-6xl font-bold tracking-tight text-white">
                     TTrades
                 </h1>
-                <p className="font-light text-slate-300 text-center">
+                <p className="font-light text-white text-opacity-80 text-center">
                 Breaking down the toughest ICT concepts into easy-to-understand terms, helping you to become a confident and successful trader.
                 </p>
                 <ul className="flex gap-x-4">
                     <li>
-                        <a href="https://www.youtube.com/@TTrades_edu" target='_blank' className="text-gray-500 hover:text-indigo-500">
+                        <a href="https://www.youtube.com/@TTrades_edu" target='_blank' className="text-rose-800 opacity-70 hover:text-rose-700">
                         <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/TTrades_edu" className="text-gray-500 hover:text-indigo-500">
+                        <a href="https://twitter.com/TTrades_edu" className="text-rose-800 opacity-70 hover:text-rose-700">
                         <FontAwesomeIcon icon={faTwitter} target='_blank' className="w-6 h-6" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/ttradesedu/" className="text-gray-500 hover:text-indigo-500">
+                        <a href="https://www.instagram.com/ttradesedu/" className="text-rose-800 opacity-70 hover:text-rose-700">
                         <FontAwesomeIcon icon={faTiktok} target='_blank' className="w-6 h-6" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="text-gray-500 hover:text-indigo-500">
+                        <a href="#" className="text-rose-800 opacity-70 hover:text-rose-700">
                         <FontAwesomeIcon icon={faInstagram} target='_blank' className="w-6 h-6" />
                         </a>
                     </li>
