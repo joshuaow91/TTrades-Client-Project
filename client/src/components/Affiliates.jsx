@@ -54,7 +54,7 @@ const AffiliateCard = ({ name, description, code, link, img }) => (
         </a>
         {code && (
           <span className='font-semibold '>
-            <mark className='bg-zinc-800 bg-opacity-20 text-white text-opacity-50 text-xs sm:text-sm p-3 rounded'>CODE: {code}</mark>
+            <mark className='bg-zinc-900 bg-opacity-40 text-white text-opacity-70 text-xs sm:text-sm p-3 rounded'>CODE: {code}</mark>
           </span>
       )}
       </div>
