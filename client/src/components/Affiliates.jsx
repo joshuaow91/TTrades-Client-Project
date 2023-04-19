@@ -48,7 +48,7 @@ const AffiliateCard = ({ name, description, code, link }) => (
     </div>
     <ul className='grid grid-cols-2 col-span-6 gap-10 text-center mt-4'>
       <li><span className='font-semibold'><mark className='bg-indigo-400 text-zinc-800 text-xs sm:text-sm p-2 rounded-md'>CODE: {code}</mark></span></li>
-      <li><a href={link} target='_blank' className='text-zinc-300 text-sm bg-zinc-700 hover:bg-zinc-500 p-2 rounded-md'>
+      <li><a href={link} target='_blank' className='text-zinc-300 text-sm bg-zinc-700 hover:bg-zinc-600 p-2 rounded-md'>
         Visit Page
         <FontAwesomeIcon icon={faArrowRightLong} className='ml-2'/>
         </a></li>
