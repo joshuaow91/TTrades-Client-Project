@@ -47,7 +47,7 @@ const AffiliateCard = ({ name, description, code, link, img }) => (
     <div className='col-span-2 text-white text-opacity-60 text-sm sm:text-base flex-col flex gap-y-2'>
       <h3 className="text-xl text-white text-opacity-90 font-semibold">{name}</h3>
       <span className='inline-flex'>{description}</span>
-      <div className="mt-2 flex justify-start gap-x-8 items-center">
+      <div className="mt-2 sm:flex-row flex flex-col justify-start gap-x-8 sm:items-center items-start gap-y-3 sm:gap-y-0">
         <a href={link} target='_blank' className='text-white text-sm hover:bg-rose-800 bg-rose-900 bg-opacity-80 px-5 py-2 rounded transform duration-300 hover:scale-110'>
           Visit Page
           <FontAwesomeIcon icon={faArrowRightLong} className='ml-2'/>
