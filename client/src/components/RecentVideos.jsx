@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 
-const YOUTUBE_API_KEY = 'AIzaSyC4qTq00nvxAGRJXA4UWIHxLbb1nRtsO0c';
 const CHANNEL_ID = 'UCQwUEVakiYDmNGe7UBza4sQ';
 
 const RecentVideos = () => {
@@ -11,7 +10,7 @@ const RecentVideos = () => {
   useEffect(() => {
     const fetchRecentVideos = async () => {
       const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=12&order=date&type=video&key=${YOUTUBE_API_KEY}`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=12&order=date&type=video&key=${import.meta.env.VITE_YOUTUBE_API_KEY}`
       );
       const data = await response.json();
       const ids = data.items.map(item => item.id.videoId);
