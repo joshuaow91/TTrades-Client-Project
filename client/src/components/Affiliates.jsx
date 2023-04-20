@@ -29,7 +29,7 @@ const affiliatesData = [
     img: Stat,
   },
   {
-    name: 'Trading View',
+    name: 'TradingView',
     description:
     'Upgrade your plan for 30 days FREE. Access stock prices, analyze price patterns, and more.',
     link: 'https://www.tradingview.com/?aff_id=108924',
