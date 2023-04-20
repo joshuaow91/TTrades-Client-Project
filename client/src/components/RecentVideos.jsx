@@ -46,7 +46,7 @@ const RecentVideos = () => {
       </div>
       {displayCount < videoIds.length && (
         <button
-          className="mt-4 mx-auto w-full sm:w-1/2 block text-center text-white text-sm hover:bg-sky-700 bg-sky-600 bg-opacity-80 px-5 py-2 rounded"
+          className="mt-4 mx-auto w-full block text-center text-white text-sm hover:bg-sky-700 bg-sky-600 bg-opacity-80 px-5 py-2 rounded"
           onClick={handleViewMore}
         >
           View More
