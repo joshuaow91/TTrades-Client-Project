@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <div className="flex flex-col mt-4 m-2 text-white text-sm font-light gap-x-10 bg-zinc-900 bg-opacity-30 rounded-md p-2 max-w-5xl">
-            <div className="flex flex-col sm:flex-row items-center sm:justify-between mb-3 bg-zinc-800 p-4 rounded">
+            <div className="flex flex-col sm:flex-row items-center sm:justify-between mb-3 bg-zinc-800 p-4 rounded gap-y-2">
               <p className="text-left text-sm">
                 &copy; TTrades 2023. All Rights Reserved.
               </p>
