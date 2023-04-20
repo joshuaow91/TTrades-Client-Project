@@ -34,7 +34,7 @@ const RecentVideos = () => {
 
   return (
     <div className='m-2'>
-      <h2 className='text-4xl font-bold tracking-wide text-white text-opacity-80 uppercase text-center bg-zinc-800 rounded-md mb-2 p-2'>Recent Videos</h2>
+      <h2 className='sm:text-4xl text-3xl font-bold tracking-wide text-white text-opacity-80 uppercase text-center bg-zinc-800 rounded-md mb-2 p-2'>Recent Videos</h2>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
         {videoIds.slice(0, displayCount).map((videoId, index) => (
           <div key={index} className="relative w-full overflow-hidden rounded-md" style={{ paddingTop: '56.25%' }}>
@@ -46,7 +46,7 @@ const RecentVideos = () => {
       </div>
       {displayCount < videoIds.length && (
         <button
-          className="mt-4 mx-auto w-full sm:w-1/2 block text-center text-white text-sm hover:bg-rose-800 bg-rose-900 bg-opacity-80 px-5 py-2 rounded-md"
+          className="mt-4 mx-auto w-full sm:w-1/2 block text-center text-white text-sm hover:bg-sky-700 bg-sky-600 bg-opacity-80 px-5 py-2 rounded-md"
           onClick={handleViewMore}
         >
           View More
