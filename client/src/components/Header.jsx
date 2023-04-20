@@ -25,22 +25,22 @@ const Header = () => {
                 <ul className="flex gap-x-4">
                     <li>
                         <a href="https://www.youtube.com/@TTrades_edu" target='_blank' className="text-sky-600 opacity-70 hover:text-sky-700 ">
-                        <FontAwesomeIcon icon={faYoutube} className="w-8 h-8 transform duration-300 hover:scale-110" />
+                        <FontAwesomeIcon icon={faYoutube} className="w-10 h-10 sm:w-12 sm:h-12 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/TTrades_edu" className="text-sky-600 opacity-70 hover:text-sky-700">
-                        <FontAwesomeIcon icon={faTwitter} target='_blank' className="w-8 h-8 transform duration-300 hover:scale-110" />
+                        <FontAwesomeIcon icon={faTwitter} target='_blank' className="w-10 h-10 sm:w-12 sm:h-12 transform duration-300 hover:scale-110" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@ttradesedu" className="text-sky-600 opacity-70 hover:text-sky-700">
+                        <FontAwesomeIcon icon={faTiktok} target='_blank' className="w-10 h-10 sm:w-12 sm:h-12 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/ttradesedu/" className="text-sky-600 opacity-70 hover:text-sky-700">
-                        <FontAwesomeIcon icon={faTiktok} target='_blank' className="w-8 h-8 transform duration-300 hover:scale-110" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" className="text-sky-600 opacity-70 hover:text-sky-700">
-                        <FontAwesomeIcon icon={faInstagram} target='_blank' className="w-8 h-8 transform duration-300 hover:scale-110" />
+                        <FontAwesomeIcon icon={faInstagram} target='_blank' className="w-10 h-10 sm:w-12 sm:h-12 transform duration-300 hover:scale-110" />
                         </a>
                     </li>
                 </ul>
