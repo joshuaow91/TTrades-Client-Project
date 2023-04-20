@@ -39,7 +39,7 @@ const affiliatesData = [
 ];
 
 const AffiliateCard = ({ name, description, link, img }) => (
-  <div className='grid grid-cols-3 bg-zinc-800 p-4 rounded-md items-start gap-y-1 gap-x-6'>
+  <div className='grid grid-cols-3 bg-zinc-800 p-4 rounded-md sm:items-center gap-y-1 gap-x-6'>
     <div className="flex flex-col items-center col-span-1">
       <img src={img} alt='affiliate logo' className='rounded-full brightness-75 hover:brightness-100 transform duration-300 hover:scale-110'/>
     </div>
