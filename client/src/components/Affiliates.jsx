@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong, faUser } from '@fortawesome/free-solid-svg-icons';
-import ETF from '../../public/etf.png'
-import Stat from '../../public/stat.png'
-import TV from '../../public/tv.png'
-import TFO from '../../public/tfo.png'
+import ETF from '/etf.png'
+import Stat from '/stat.png'
+import TV from '/tv.png'
+import TFO from '/tfo.png'
 
 const affiliatesData = [
   {

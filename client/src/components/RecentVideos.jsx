@@ -21,7 +21,7 @@ const RecentVideos = () => {
   }, []);
 
   const handleViewMore = () => {
-    setDisplayCount(displayCount + 3);
+    setDisplayCount(displayCount + 2);
   };
 
   const opts = {
