@@ -8,7 +8,7 @@ const Footer = () => {
               <p className="text-left text-sm">
                 &copy; TTrades 2023. All Rights Reserved.
               </p>
-              <p>Made by <a className=" text-white underline hover:text-zinc-200" href="https://joshuaow.com">Joshua Ow</a></p>
+              <p>Made by <a className=" text-sky-400  hover:text-zinc-200" href="https://joshuaow.com">Joshua Ow</a></p>
             </div>
             <div className="text-xs text-left max-h-44 overflow-scroll p-2 sm:max-h-96 text-white text-opacity-60">
                 <p className="font-bold">WEBSITE DISCLAIMER</p>
